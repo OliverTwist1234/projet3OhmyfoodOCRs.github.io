@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ohmyfood! est une entreprise de commande de repas en ligne qui permet aux utilisateurs de composer leur propre menu."
+    />
+    <title>Projet 3 Openclassrooms "ohmyfood" index.html</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <!--/////////////////////////////////////////////////LOADER////////////////////////////////////////-->
+
+    <div class="loader">
+      <svg
+        class="loader__svg"
+        xmlns="http://www.w3.org/2000/svg"
+        height="218"
+        width="218"
+        viewBox="0 0 218 218"
+      >
+        <g
+          fill="none"
+          stroke="#FF79DA"
+          stroke-width="5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-miterlimit="10"
+          stroke-dasharray="400"
+          stroke-dashoffset="400"
+        >
+          <path
+            class="path__loader"
+            d="M112.6 123.9c24.5 27 33.4 41.5 40.9 49 2.4 2.4 7.8.8 12.1-3.5s5.9-9.7 3.5-12.1c-7.5-7.5-22-16.4-49-40.9M94.2 91.6c2.1 2.1 4.2 4.2 6.2 6.1"
+          />
+          <ellipse
+            class="path__loader"
+            transform="rotate(-45 71.65 75.393)"
+            cx="71.6"
+            cy="75.4"
+            rx="18.5"
+            ry="28.3"
+          />
+          <path
+            class="path__loader"
+            d="M94 104.1c-2-2-4-4.1-6.1-6.2M61.8 62c5.1-5.1 28.8 17.2 23 23"
+          />
+          <g>
+            <path
+              class="path__loader"
+              d="M139.6 69c-2.4 2.3-6.2 2.3-8.5 0s-2.3-6-.1-8.3M156.7 86.1c-2.4 2.4-6.2 2.4-8.5 0-2.3-2.3-2.3-6.1 0-8.5"
+            />
+            <path
+              class="path__loader"
+              d="M149.1 42.5l-32.9 32.9c-4.2 4.2-4.2 10.9 0 15.1l2.2 2.2c-49.1 49.1-64.2 54.9-73.9 64.6-2.4 2.4-.8 7.8 3.5 12.1s9.7 5.9 12.1 3.5c9.7-9.7 15.5-24.8 64.6-73.9l2 2c4.2 4.2 10.9 4.2 15.1 0l32.9-32.9"
+            />
+            <path
+              class="path__loader"
+              d="M166.1 59.6l-18 18c-2.4 2.4-6.2 2.3-8.5 0s-2.4-6.2 0-8.5l18-18"
+            />
+          </g>
+        </g>
+        <circle
+          class="circle__loader"
+          fill="none"
+          stroke="#9356DC"
+          stroke-width="5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-miterlimit="10"
+          stroke-dasharray="700"
+          stroke-dashoffset="700"
+          cx="109"
+          cy="109"
+          r="100"
+        />
+      </svg>
+      <ul class="loader__liste">
+        <li class="loader__liste--element">L</li>
+        <li class="loader__liste--element">o</li>
+        <li class="loader__liste--element">a</li>
+        <li class="loader__liste--element">d</li>
+        <li class="loader__liste--element">i</li>
+        <li class="loader__liste--element">n</li>
+        <li class="loader__liste--element">g</li>
+        <li class="loader__liste--element">.</li>
+        <li class="loader__liste--element">.</li>
+        <li class="loader__liste--element">.</li>
+      </ul>
+    </div>
+
+    <!--////////////////////////////////////////////HEADER/////////////////////////////////////////////////-->
+
+    <div class="header-grid-container">
+      <header class="siteheader">
+        <figure class="siteheader__logo">
+          <img
+            src="./public/Maquettes_Ohmyfood/images/logo/ohmyfood.png"
+            alt="Logo de ohmyfood"
+            class="siteheader__image"
+          />
+        </figure>
+      </header>
+
+      <!--**************************************Section Localisation***********************************-->
+
+      <div class="location">
+        <form class="location__town" method="post" action="#">
+          <a
+            href="#"
+            class="location__town--lien"
+            title="Lien possible vers une carte"
+          >
+            <i class="location__town--icon fas fa-map-marker-alt"></i>
+          </a>
+
+          <input
+            class="location__town--saisie"
+            type="text"
+            placeholder="Ex : Ville, Quartier"
+          />
+        </form>
+      </div>
+    </div>
+
+    <!--//////////////////////////////////////CONTENU PRINCIPAL////////////////////////////////////////////-->
+
+    <main>
+      <!--************************************Section Exploration**********************************-->
+
+      <section class="exploration">
+        <h1 class="exploration__titre">Réservez le menu qui vous convient</h1>
+        <p class="exploration__parag">
+          Découvrez des restaurants d'exception, séléctionnés par nos soins.
+        </p>
+        <nav class="exploration__btn">
+          <a href="#ancre__resto" class="exploration__btn--lien"
+            >Explorer nos restaurants</a
+          >
+        </nav>
+      </section>
+
+      <!--***********************************Section Operation**************************************-->
+
+      <section class="operation">
+        <h2 class="operation__titre">Fonctionnement</h2>
+        <nav class="operation__nav">
+          <a href="#ancre__resto" class="operation__lien operation__lien--1">
+            <div class="operation__btn operation__btn--1">
+              <p class="operation__number operation__number--1">1</p>
+              <i class="operation__icon fas fa-mobile-alt"></i>
+              <p class="operation__parag">Choisisez un restaurant</p>
+            </div>
+          </a>
+          <a href="#ancre__resto" class="operation__lien operation__lien--2">
+            <div class="operation__btn operation__btn--2">
+              <p class="operation__number operation__number--2">2</p>
+              <i class="operation__icon fas fa-list-ul"></i>
+              <p class="operation__parag">Composez votre menu</p>
+            </div>
+          </a>
+          <a href="" class="operation__lien operation__lien--3">
+            <div class="operation__btn operation__btn--3">
+              <p class="operation__number operation__number--3">3</p>
+              <i class="operation__icon operation__icon--3 fas fa-store"></i>
+              <p class="operation__parag">Dégustez au restaurant</p>
+            </div>
+          </a>
+        </nav>
+      </section>
+
+      <!--********************************Section Restaurants***************************************-->
+
+      <section class="restaurants" id="ancre__resto">
+        <h2 class="restaurants__titre">Restaurants</h2>
+
+        <div class="restaurants__cards">
+          <section class="restaurant__card restaurant__card--1">
+            <a href="la-palette-du-gout.html" target="_blank" class="restaurant__card--lien"> 
+              <figure class="restaurant__card--image">
+                <img
+                  class="restaurant__card--photo"
+                  src="./public/Maquettes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash-500w.jpg"
+                  srcset="
+                    ./public/Maquettes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash-1024w.jpg 1024w,
+                    ./public/Maquettes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash-768w.jpg   768w,
+                    ./public/Maquettes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash-500w.jpg   500w,
+                    ./public/Maquettes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash-375w.jpg   375w
+                  "
+                  sizes="100vw"
+                  alt="photo d'un plat servi au restaurant"
+                />
+                <div class="restaurant__card--new">
+                  <p>Nouveau</p>
+                </div>
+              </figure>
+            </a>
+
+            <div class="restaurant__infos">
+              <div class="restaurant__infos--element">
+                <h3 class="restaurant__infos--titre">La palette du goût</h3>
+                <p class="restaurant__infos--parag">Ménilmontant</p>
+              </div>
+              <div class="heart">
+                <input
+                  class="heart__in"
+                  id="love1"
+                  type="checkbox"
+                  name="filtre"
+                  value=""
+                />
+                <label class="heart__lbl" for="love1">
+                  <svg
+                    aria-hidden="true"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-1 fa-heart fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    viewBox="-20 0 550 550"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                    <defs>
+                      <linearGradient id="Gradient-1">
+                        <stop offset="0%" stop-color="#9356DC" />
+                        <stop offset="100%" stop-color="#FF79DA" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-2 fa-heart fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    viewBox="-20 0 550 550"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                    <defs>
+                      <linearGradient>
+                        <stop offset="0%" stop-color="#9356DC" />
+                        <stop offset="100%" stop-color="#FF79DA" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </label>
+              </div>
+            </div>
+          </section>
+
+          <section class="restaurant__card restaurant__card--2">
+            <a href="la-note-enchantee.html" class="restaurant__card--lien">
+              <figure class="restaurant__card--image">
+                <img
+                  class="restaurant__card--photo"
+                  src="./public/Maquettes_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash-500w.jpg"
+                  srcset="
+                    ./public/Maquettes_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash-1024w.jpg 1024w,
+                    ./public/Maquettes_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash-768w.jpg   768w,
+                    ./public/Maquettes_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash-500w.jpg   500w,
+                    ./public/Maquettes_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash-375w.jpg   375w
+                  "
+                  sizes="100vw"
+                  alt="photo d'un plat servi au restaurant"
+                />
+                <div class="restaurant__card--new">
+                  <p>Nouveau</p>
+                </div>
+              </figure>
+            </a>
+
+            <div class="restaurant__infos">
+              <div class="restaurant__infos--element">
+                <h3 class="restaurant__infos--titre">La note enchantée</h3>
+                <p class="restaurant__infos--parag">Charonne</p>
+              </div>
+              <div class="heart">
+                <input
+                  class="heart__in"
+                  id="love2"
+                  type="checkbox"
+                  name="filtre"
+                  value=""
+                />
+                <label class="heart__lbl" for="love2">
+                  <svg
+                    aria-hidden="true"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-1 fa-heart fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    viewBox="-20 0 550 550"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                    <defs>
+                      <linearGradient>
+                        <stop offset="0%" stop-color="#9356DC" />
+                        <stop offset="100%" stop-color="#FF79DA" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-2 fa-heart fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    viewBox="-20 0 550 550"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                    <defs>
+                      <linearGradient>
+                        <stop offset="0%" stop-color="#9356DC" />
+                        <stop offset="100%" stop-color="#FF79DA" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </label>
+              </div>
+            </div>
+          </section>
+
+          <section class="restaurant__card restaurant__card--3">
+            <a href="a-la-française.html" class="restaurant__card--lien">
+              <figure class="restaurant__card--image">
+                <img
+                  class="restaurant__card--photo"
+                  src="./public/Maquettes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash-500w.jpg"
+                  srcset="
+                    ./public/Maquettes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash-1024w.jpg 1024w,
+                    ./public/Maquettes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash-768w.jpg   768w,
+                    ./public/Maquettes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash-500w.jpg   500w,
+                    ./public/Maquettes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash-375w.jpg   375w
+                  "
+                  sizes="100vw"
+                  alt="photo d'un plat servi au restaurant"
+                />
+              </figure>
+            </a>
+
+            <div class="restaurant__infos">
+              <div class="restaurant__infos--element">
+                <h3 class="restaurant__infos--titre">À la française</h3>
+                <p class="restaurant__infos--parag">Cité Rouge</p>
+              </div>
+              <div class="heart">
+                <input
+                  class="heart__in"
+                  id="love3"
+                  type="checkbox"
+                  name="filtre"
+                  value=""
+                />
+                <label class="heart__lbl" for="love3">
+                  <svg
+                    aria-hidden="true"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-1 fa-heart fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    viewBox="-20 0 550 550"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                    <defs>
+                      <linearGradient>
+                        <stop offset="0%" stop-color="#9356DC" />
+                        <stop offset="100%" stop-color="#FF79DA" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-2 fa-heart fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    viewBox="-20 0 550 550"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                    <defs>
+                      <linearGradient>
+                        <stop offset="0%" stop-color="#9356DC" />
+                        <stop offset="100%" stop-color="#FF79DA" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </label>
+              </div>
+            </div>
+          </section>
+
+          <section class="restaurant__card restaurant__card--4">
+            <a href="le-delice-des-sens.html" class="restaurant__card--lien">
+              <figure class="restaurant__card--image">
+                <img
+                  class="restaurant__card--photo"
+                  src="./public/Maquettes_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-500w.jpg"
+                  srcset="
+                    ./public/Maquettes_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-1024w.jpg 1024w,
+                    ./public/Maquettes_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-768w.jpg   768w,
+                    ./public/Maquettes_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-500w.jpg   500w,
+                    ./public/Maquettes_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-375w.jpg   375w
+                  "
+                  alt="photo d'un plat servi au restaurant"
+                  sizes="100vw"
+                />
+              </figure>
+            </a>
+
+            <div class="restaurant__infos">
+              <div class="restaurant__infos--element">
+                <h3 class="restaurant__infos--titre">Le délice des sens</h3>
+                <p class="restaurant__infos--parag">Folie-Méricourt</p>
+              </div>
+              <div class="heart">
+                <input
+                  class="heart__in"
+                  id="love4"
+                  type="checkbox"
+                  name="filtre"
+                  value=""
+                />
+                <label class="heart__lbl" for="love4">
+                  <svg
+                    aria-hidden="true"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-1 fa-heart fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    viewBox="-20 0 550 550"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                    <defs>
+                      <linearGradient>
+                        <stop offset="0%" stop-color="#9356DC" />
+                        <stop offset="100%" stop-color="#FF79DA" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-2 fa-heart fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    viewBox="-20 0 550 550"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    ></path>
+                    <defs>
+                      <linearGradient>
+                        <stop offset="0%" stop-color="#9356DC" />
+                        <stop offset="100%" stop-color="#FF79DA" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </label>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!--/////////////////////////////////////////////////FOOTER///////////////////////////////////////////////////////////-->
+
+    <footer class="sitefooter">
+      <h2 class="sitefooter__titre">ohmyfood</h2>
+      <ul class="sitefooter__liste">
+        <li class="sitefooter__liste--element">
+          <a href="" class="sitefooter__liste--element-lien"
+            ><i class="sitefooter__liste--element-icon fas fa-utensils"></i
+            >Proposer un restaurant</a
+          >
+        </li>
+        <li class="sitefooter__liste--element">
+          <a href="" class="sitefooter__liste--element-lien"
+            ><i class="sitefooter__liste--element-icon fas fa-hands-helping"></i
+            >Devenir partenaire</a
+          >
+        </li>
+        <li class="sitefooter__liste--element">
+          <a href="" class="sitefooter__liste--element-lien"
+            >Mentions légales</a
+          >
+        </li>
+        <li class="sitefooter__liste--element">
+          <address class="sitefooter__liste--element-contact">
+            <a
+              href="mailto:ohmyfood@bidule.com"
+              class="sitefooter__liste--element-lien"
+              >Contact</a
+            >
+          </address> 
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
